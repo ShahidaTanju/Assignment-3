@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- Tailwind & DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Taiwind Css config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
+                <div class="-rotate-45 bg-[#ABEF5F] rounded-full ">
+                    <i class="fa-solid fa-arrow-right p-1 p-2"></i>
+                </div>
+                <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#737373] font-[500]">
+                    <li class="hover:text-black duration-300 easy-in-out"><a>Home</a></li>
+                    <li class="hover:text-black duration-300 easy-in-out"><a>Services</a></li>
+                    <li class="hover:text-black duration-300 easy-in-out"><a>Portfolio</a></li>
+                    <li class="hover:text-black duration-300 easy-in-out"><a>Blogs</a></li>
+                    <li class="hover:text-black duration-300 easy-in-out"><a>Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <div class="flex items-center font-semibold text-[#] gap-7 p-5 rounded-full md:flex hidden">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="bg-[#ABEF5F] flex px-1 rounded-2xl font-bold">
+                    <button>Book Consult</button>
+                    <div class="-rotate-45 rounded-full">
+                        <i class="fa-solid fa-arrow-right p-1 p-2"></i>
+                    </div>
+                </div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -23,7 +71,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -32,20 +80,6 @@
                     </ul>
 
                 </div>
-                <a class="btn btn-ghost text-xl">Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="navbar-end">
-                <a class="btn">Book Consult</a>
             </div>
         </div>
     </header>
