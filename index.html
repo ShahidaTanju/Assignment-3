@@ -21,6 +21,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ["Manrope"]
                     }
                 }
             }
@@ -167,7 +170,7 @@
                     weathered wood, sleek metal accents.
                 </p>
             </div>
-            <div class="flex pt-7 gap-10 pl-20 pr-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 pt-7 gap-10 pl-20 pr-10">
                 <div class="card bg-[#E7C1D3] shadow-xl p-3">
                     <div class="w-60 h-50">
                         <img src="./assets/concept.png" class="w-15 h-15" alt="">
@@ -198,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="">
             <div class="pb-5 text-center pt-10">
                 <button class=" bg-[#ABEF5F] p-2 rounded-lg text-sm text-[#494949]">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -212,10 +215,10 @@
                     weathered wood, sleek metal accents.
                 </p>
             </div>
-            <div class="flex pl-20 pt-20 mx-auto gap-10">
-                <div class="flex  border-solid border-2 border-slate-200 rounded-3xl pt-4">
-                    <div class=" pl-4">
-                        <img src="./assets/img1.png" alt="" style="width: 100%;">
+            <div class="lg:flex lg:pl-20 pt-20 mx-auto gap-10">
+                <div class="lg:flex  border-solid border-2 border-slate-200 rounded-3xl pt-4">
+                    <div class="pl-4">
+                        <img src="./assets/img1.png" alt="" class="sm:w-[70%] pr-6" style="width: 100%;">
                     </div>
                     <div class="w-100 pl-10 pr-10">
                         <h3 class="text-lg font-bold">Commercial</h3>
@@ -236,11 +239,11 @@
                     <img src="./assets/img2.png" alt="" class="pl-10">
                 </div>
             </div>
-            <div class="flex mx-auto gap-4 pl-20 pt-10">
+            <div class="lg:flex mx-auto gap-4 pl-20 pt-10">
                 <div class="border-solid border-2 border-slate-200 rounded-3xl p-5">
                     <img src="./assets/img3.png" alt="" class="max-w-sm">
                 </div>
-                <div class="flex border-solid border-2 border-slate-200 rounded-3xl p-5 w-80%">
+                <div class="lg:flex border-solid border-2 border-slate-200 rounded-3xl p-5 w-80%">
                     <img src="./assets/img4.png" alt="" class="max-w-sm">
                     <div class="w-80 pl-10">
                         <h3 class="text-lg font-bold">Commercial</h3>
@@ -264,9 +267,82 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+        <section class="pt-20 bg-[url('./assets/bg.jpg')] mt-20 pb-10">
+            <div class="pb-5 text-center pt-10">
+                <button class=" bg-[#ABEF5F] p-2 rounded-lg text-sm text-[#494949]">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Let’s Connect
+                </button>
+            </div>
+            <div class="text-center">
+                <h3 class="font-bold text-4xl pb-5">Let’s Discuss Next Project</h3>
+                <p class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication,
+                    <br> featuring weathered wood, sleek metal accents.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:w-9/12  mx-auto mt-4">
+                <div>
+                    <input type="text" class="p-4 border-none outline-none bg-white rounded-lg  w-full"
+                        placeholder="First Name*">
+                </div>
+                <div>
+                    <input type="text" class="p-4 border-none outline-none bg-white rounded-lg  w-full"
+                        placeholder="Last Name*">
+                </div>
+                <div>
+                    <input type="text" class="p-4 border-none outline-none bg-white rounded-lg  w-full"
+                        placeholder="Phone Number*">
+                </div>
+                <div>
+                    <input type="text" class="p-4 border-none outline-none bg-white rounded-lg  w-full"
+                        placeholder="Email Number*">
+                </div>
+                <div class="lg:col-span-2">
+                    <textarea name="" id="" class="p-4 border-none outline-none bg-white rounded-lg  w-full"
+                        placeholder="Write your message here"></textarea>
+                </div>
+            </div>
+            <div class=" lg:px-5 w-[78%] mx-auto mt-4">
+                <button class=" bg-[#ABEF5F]  text-center rounded-full font-bold py-3 w-full">Send
+                    Mail
+                    <i class="bg-black text-[#ABEF5F] p-1 rounded-full  -rotate-45 fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+        <section class="pt-10">
+            <div class="text-center">
+                <h3 class="font-bold text-4xl pb-5">Meet Our Leaders</h3>
+            </div>
 
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-center bg-[#1C1C1C] text-base-content rounded pt-10 pb-10">
+        <nav class="grid grid-flow-col">
+            <a class="btn btn-ghost text-3xl font-bold text-white">
+                <i
+                    class="fa-solid fa-arrow-right text-lg bg-[#ABEF5F] w-6 h-6 rounded-full text-black flex items-center justify-center -rotate-45"></i>Rinterio
+            </a>
+        </nav>
+        <p class="text-stone-600 max-w-xl mx-auto sm:max-w-md text-wrap">The barn house captivates with its blend of
+            rustic charm
+            and modern
+            sophistication,featuring weathered wood,sleek metal accents.</p>
+        <div class="lg:grid-flow-col">
+            <ul class="menu menu-horizontal px-1 text-sm gap-7 sm:flex flex-col-reverse">
+                <li class="text-white duration-300 easy-in-out"><a>Home</a></lic>
+                <li class="text-white duration-300 easy-in-out"><a>Services</a></li>
+                <li class="text-white duration-300 easy-in-out"><a>Portfolio</a></li>
+                <li class="text-white duration-300 easy-in-out"><a>Blogs</a></li>
+                <li class="text-white duration-300 easy-in-out"><a>Contact Us</a></li>
+            </ul>
+        </div>
+        <button class=" bg-[#ABEF5F] flex rounded-full font-bold w-40 p-3 gap-1">Book Consult
+            <div
+                class="bg-black text-[#ABEF5F] w-6 h-6 rounded-full flex justify-center items-center mx-auto  -rotate-45">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </button>
     </footer>
 </body>
 
